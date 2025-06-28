@@ -5,7 +5,8 @@ import { Route, Routes } from 'react-router';
 import { MainPage } from '../../pages/main';
 import { PlayersPage } from '../../pages/players';
 import { RatingPage } from '../../pages/rating';
-import { TeamPage } from '../../pages/team';
+import { TeamsPage } from '../../pages/teams';
+import { TeamCardPage } from '../../pages/teams/teamCard';
 import { TournamentsPage } from '../../pages/tournaments';
 import { AppMenu } from '../AppMenu';
 
@@ -25,7 +26,8 @@ export const AppLayout = () => {
           <Routes>
             <Route index element={<MainPage />} />
             <Route path="main" element={<MainPage />} />
-            <Route path="team" element={<TeamPage />} />
+            <Route path="teams" element={<TeamsPage />} />
+            <Route path="/teams/:id" element={<TeamCardPage />} />
             <Route path="tournaments" element={<TournamentsPage />} />
             <Route path="players" element={<PlayersPage />} />
             <Route path="rating" element={<RatingPage />} />

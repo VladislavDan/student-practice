@@ -20,7 +20,7 @@ export const AppMenu = () => {
 
   const tabs: MenuItem[] = [
     { key: 'main', icon: <HomeOutlined />, label: 'Главная' },
-    { key: 'team', icon: <TeamOutlined />, label: 'Команды' },
+    { key: 'teams', icon: <TeamOutlined />, label: 'Команды' },
     { key: 'tournaments', icon: <TrophyOutlined />, label: 'Турниры' },
     { key: 'players', icon: <FileOutlined />, label: 'Игроки' },
     { key: 'rating', icon: <LineChartOutlined />, label: 'Расчет рейтинга' },

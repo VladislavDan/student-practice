@@ -1,10 +1,10 @@
-import { Card, Typography } from 'antd';
+import { Typography } from 'antd';
+
+import { Players } from '../../components/Players';
 
 export const PlayersPage = () => (
   <div style={{ padding: 24 }}>
     <Typography.Title level={3}>Игроки</Typography.Title>
-    <Card>
-      <Typography.Text>Статистика игроков появится здесь</Typography.Text>
-    </Card>
+    <Players />
   </div>
 );
